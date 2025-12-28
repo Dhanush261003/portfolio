@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
+    gap: 14px;
 }
 .hero img{
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .hero h1{
     text-align: center;
@@ -29,19 +29,19 @@
 .hero-action{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 50px;
 }
 .hero-connect{
-    padding: 25px 45px;
+    padding: 20px 35px;
     border-radius: 50px;
     background: linear-gradient(270deg, #df8908 -5.09%, #b415ff 106.28%);
     cursor: pointer;
 }
 .hero-resume{
-    padding: 25px 75px;
+    padding: 20px 65px;
     border-radius: 50px;
     border: 2px solid #fff;
     cursor: pointer;
