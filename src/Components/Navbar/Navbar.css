@@ -42,6 +42,9 @@
 .nav-mob-close{
     display: none;
 }
+.nav-mob-open{
+    display: none;
+}
 
 /* responsive */
 
