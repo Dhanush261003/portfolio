@@ -107,9 +107,7 @@
 
     .hero {
         width: 100vw;
-        min-height: 100vh;
-
-        margin: 0 ;
+        margin: 0;
         padding: 0 16px;
 
         display: flex;
@@ -122,8 +120,8 @@
     }
 
     .hero img {
-        width: 180px;
-        margin: 0 auto 20px;
+        width: 80%;
+        margin: 0;
         display: block;
     }
 
@@ -137,7 +135,7 @@
 
     .hero p {
         width: 100%;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         margin: 12px auto 20px;
         text-align: center;
