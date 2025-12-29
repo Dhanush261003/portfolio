@@ -172,7 +172,7 @@
         font-size: 16px;
     }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .about {
         width: 100%;
         margin: 0;

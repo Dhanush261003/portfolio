@@ -103,7 +103,7 @@
 
 /* mobile view resoponsive */
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
 
     .hero {
         width: 100vw;

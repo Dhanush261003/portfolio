@@ -75,16 +75,16 @@
     }
 }
 
-@media(max-width:360px){
+@media(max-width:480px){
     .footer{
-        margin: 50px 70px;
+        margin: 20px;
     }
     .footer-top{
         flex-direction: column;
         gap: 50px;
     }
     .footer-top-right{
-        display: block;    
+        display: none;    
     }
     .footer-bottom{
         display: flex;

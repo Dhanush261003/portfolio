@@ -103,7 +103,7 @@
         gap: 30px;
     }
 }
-@media (max-width: 360px){
+@media (max-width: 480px){
    .services{
         align-items: start;
         gap: 50px;
