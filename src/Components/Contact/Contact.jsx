@@ -59,11 +59,11 @@ const Contact = () => {
 
                         {/* Phone */}
                         <a
-                            href="tel:+91812474699"
+                            href="tel:+918124474699"
                             className="contact-detail"
                         >
                             <img src={call_icon} alt="phone" />
-                            <p>+91 81247 4699</p>
+                            <p>+91 81244 74699</p>
                         </a>
 
                         {/* Location */}
