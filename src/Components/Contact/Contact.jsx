@@ -8,13 +8,13 @@ import call_icon from '../../assets/call_icon.svg'
 const Contact = () => {
 
     const onSubmit = async (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
+        event.preventDefault()
+        const formData = new FormData(event.target)
 
-        formData.append("access_key", "83802935-784b-4fc3-835d-1def4a271842");
+        formData.append("access_key", "83802935-784b-4fc3-835d-1def4a271842")
 
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
+        const object = Object.fromEntries(formData)
+        const json = JSON.stringify(object)
 
         const res = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -23,14 +23,13 @@ const Contact = () => {
                 Accept: "application/json"
             },
             body: json
-        }).then((res) => res.json());
+        }).then((res) => res.json())
 
         if (res.success) {
-            alert(res.message);
+            alert(res.message)
+            event.target.reset()
         }
-    };
-
-
+    }
 
     return (
         <div id='contact' className="contact">
@@ -38,30 +37,63 @@ const Contact = () => {
                 <h1>Get in touch</h1>
                 <img src={theme_pattern} alt="" />
             </div>
+
             <div className="contact-section">
+                {/* LEFT */}
                 <div className="contact-left">
                     <h1>Let's talk</h1>
-                    <p>I'm currently availabe to take on new projects, so feel free to contact</p>
+                    <p>
+                        I’m currently open to new projects and learning opportunities, and I’d love to collaborate on building modern, user-friendly web solutions.
+                    </p>
+
                     <div className="contact-details">
-                        <div className="contact-detail">
-                            <img src={mail_icon} alt="" /><p>dhanushsekar2610@gmail.com</p>
-                        </div>
-                        <div className="contact-detail">
-                            <img src={call_icon} alt="" /><p>+91 812474699</p>
-                        </div>
-                        <div className="contact-detail">
-                            <img src={location_icon} alt="" /><p>Kanchipuram, Tamilnadu</p>
-                        </div>
+
+                        {/* Email */}
+                        <a
+                            href="mailto:dhanushsekar2610@gmail.com"
+                            className="contact-detail"
+                        >
+                            <img src={mail_icon} alt="email" />
+                            <p>dhanushsekar2610@gmail.com</p>
+                        </a>
+
+                        {/* Phone */}
+                        <a
+                            href="tel:+91812474699"
+                            className="contact-detail"
+                        >
+                            <img src={call_icon} alt="phone" />
+                            <p>+91 81247 4699</p>
+                        </a>
+
+                        {/* Location */}
+                        <a
+                            href="https://www.google.com/maps/place/Kanchipuram,+Tamil+Nadu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="contact-detail"
+                        >
+                            <img src={location_icon} alt="location" />
+                            <p>Kanchipuram, Tamil Nadu</p>
+                        </a>
+
                     </div>
                 </div>
+
+                {/* RIGHT */}
                 <form onSubmit={onSubmit} className='contact-right'>
-                    <label htmlFor="">Your Name</label>
-                    <input type="text" placeholder='Enter your name' name='name' />
-                    <label htmlFor="">Your Email</label>
-                    <input type="email" placeholder='Enter your email' name="email" />
-                    <label htmlFor="">Write your message here</label>
-                    <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
-                    <button type='submit' className="contact-submit">Submit now</button>
+                    <label>Your Name</label>
+                    <input type="text" placeholder='Enter your name' name='name' required />
+
+                    <label>Your Email</label>
+                    <input type="email" placeholder='Enter your email' name="email" required />
+
+                    <label>Write your message here</label>
+                    <textarea name="message" rows="8" placeholder='Enter your message' required />
+
+                    <button type='submit' className="contact-submit">
+                        Submit now
+                    </button>
                 </form>
             </div>
         </div>
