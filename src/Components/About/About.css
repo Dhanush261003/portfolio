@@ -172,89 +172,39 @@
         font-size: 16px;
     }
 }
-
-@media(max-width:360px) {
+@media (max-width: 360px) {
     .about {
-        width: 90vh;
+        width: 100%;
+        margin: 0;
         gap: 40px;
-        margin: 50px 70px;
         align-items: start;
+        overflow-x: hidden;
     }
 
     .about-title h1 {
-        font-size: 40px;
-        padding: 0;
+        font-size: 38px;
     }
 
     .about-title img {
-        width: 130px;
-        right: -20px;
-    }
-
-    .about-sections {
-        flex-direction: column;
-    }
-
-    .about-left {
-        display: none;
+        width: 120px;
+        right: 0;
     }
 
     .about-para {
-        width: 70%;
-        margin: 10px 0px;
+        width: 100%;
         font-size: 14px;
-        line-height: 28px;
+        line-height: 26px;
     }
 
     .about-skill {
-        width: 70%;
+        width: 100%;
         gap: 10px;
-        align-items: center;
-    }
-
-    .about-skill p {
-        font-size: 20px;
-    }
-
-    .about-skill hr {
-        height: 6px;
     }
 
     .about-achievements {
         width: 100%;
-        padding-left: 0;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        justify-items: center;
-        align-items: center;
         margin-bottom: 40px;
     }
-
-    /* Remove divider lines on mobile */
-    .about-achievements hr {
-        display: none;
-    }
-
-    .about-achievement {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-
-    /* Make 3rd achievement span full row */
-    .about-achievement:nth-of-type(3) {
-        grid-column: 1 / -1;
-    }
-
-    .about-achievement h1 {
-        font-size: 26px;
-    }
-
-    .about-achievement p {
-        font-size: 16px;
-        text-align: center;
-    }
-
 }
-

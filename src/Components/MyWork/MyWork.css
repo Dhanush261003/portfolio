@@ -85,3 +85,38 @@
         cursor: pointer;
     }
 }
+
+@media(max-width:360px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 30px;
+        align-items: start;
+    }
+    .mywork-title h1{
+        padding: 0;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .mywork-title img{
+        width: 80px;
+        margin-right: -15px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .mywork-container img{
+        width: 100%;
+        height: 100%;
+    }
+    .mywork-showmore{
+        margin: 0;
+        padding: 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .mywork-showmore img{
+        width: 20px;
+
+    }
+}

@@ -102,42 +102,60 @@
 }
 
 /* mobile view resoponsive */
+
 @media (max-width: 360px) {
+
     .hero {
-        width: 90vh;
+        width: 100vw;
+        min-height: 100vh;
+
+        margin: 0 ;
+        padding: 0 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        box-sizing: border-box;
     }
 
     .hero img {
-        margin-top: 50px;
-        width: 300px;
+        width: 180px;
+        margin: 0 auto 20px;
+        display: block;
     }
 
     .hero h1 {
-        margin-top: 20px;
-        font-size: 50px;
+        width: 100%;
+        font-size: 32px;
+        line-height: 42px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .hero p {
-        width: 70%;
-        font-size: 18px;
-        line-height: 32px;
-        margin: 10px 0px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 12px auto 20px;
+        text-align: center;
     }
 
     .hero-action {
-        gap: 16px;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
     }
 
-    .hero-connect {
-        padding: 20px 30px;
-        border-radius: 40px;
-    }
-
+    .hero-connect,
     .hero-resume {
-        padding: 20px 50px;
-        border-radius: 40px;
+        width: 90%;
+        padding: 14px 0;
+        text-align: center;
     }
 }

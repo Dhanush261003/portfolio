@@ -116,11 +116,9 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #1f0016;
         width: 40%;
         height: 100%;
         z-index: 2;
-        transition: right 0.5s;
         right: -50px;  
     }
     .nav-menu li {
