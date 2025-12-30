@@ -50,7 +50,7 @@ A modern, responsive **personal portfolio website** built to showcase my skills,
 
 ## 📫 Contact
 
-📧 Email: dhanushcoder210@gmail.com  
+📧 Email: dhanushsekar210@gmail.com  
 📍 Kanchipuram, Tamil Nadu  
 
 ---
