@@ -116,13 +116,13 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        width: 100%;
+        width: 60%;
         height: 100%;
         z-index: 2;
         right: -100%;
     }
     .nav-menu li {
-        font-size: 35px;
+        font-size: 30px;
         padding-left: 40px;
         flex-direction: row;
         gap: 15px;

@@ -222,18 +222,26 @@
         width: 23px;
     }
 
+    .contact-right {
+        text-align: center;
+    }
+
     .contact-right label {
         font-size: 16px;
     }
 
     .contact-right input {
-        width: 100%;
+        width: 95%;
+        max-width: auto;
+        margin: 0 auto;
         height: 40px;
         font-size: 16px;
     }
 
     .contact-right textarea {
-        width: 90%;
+        width: 85%;
+        max-width: auto;
+        margin: 0 auto;
         font-size: 16px;
     }
 
