@@ -44,7 +44,7 @@ A modern, responsive **personal portfolio website** built to showcase my skills,
 
 ## 📸 Preview
 
-*(Add screenshots of your website here)*
+<img width="1366" height="5529" alt="dhanush-portfolio-screenshot" src="https://github.com/user-attachments/assets/9f966187-5994-4894-bf41-6cbf42804c5e" />
 
 ---
 
