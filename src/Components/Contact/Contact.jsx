@@ -4,6 +4,8 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
+import linkedin_icon from '../../assets/linkedin_icon.svg'
+
 
 const Contact = () => {
 
@@ -64,6 +66,16 @@ const Contact = () => {
                         >
                             <img src={call_icon} alt="phone" />
                             <p>+91 81244 74699</p>
+                        </a>
+
+                        {/* Linkedin */}
+                        <a
+                            href="https://www.linkedin.com/in/dhanu-sh/"
+                            className="contact-detail"
+                            target="_blank"
+                        >
+                            <img src={linkedin_icon} alt="phone" />
+                            <p>linkedin.com/in/dhanu-sh</p>
                         </a>
 
                         {/* Location */}

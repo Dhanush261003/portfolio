@@ -51,6 +51,10 @@
     gap: 50px;
     margin-bottom: 50px;
 }
+.footer-bottom-right a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .footer-email-input:hover{
     border: 2px solid white;
@@ -91,7 +95,10 @@
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
-    .footer-bottom p{
+    .footer-bottom-left{
+        text-align: center;
+    }
+    .footer-bottom a{
         text-align: center;
     }
 }

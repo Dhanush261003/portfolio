@@ -30,10 +30,10 @@ const MyWork = () => {
       </div>
 
       {/* Show More */}
-      <div className="mywork-showmore">
-        <a href="https://github.com/Dhanush261003" target="_blank"><p >Show More</p></a>
+      <a href="https://github.com/Dhanush261003" target="_blank" className="mywork-showmore">
+        <p>Show More</p>
         <img src={arrow_icon} alt="arrow icon" />
-      </div>
+      </a>
 
     </div>
   )

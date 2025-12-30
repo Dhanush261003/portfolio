@@ -41,19 +41,21 @@
 }
 
 .hero-connect {
+    display: inline-block;
     padding: 20px 35px;
     border-radius: 50px;
     background: linear-gradient(270deg, #df8908 -5.09%, #b415ff 106.28%);
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .hero-resume {
+    display: inline-block;
     padding: 20px 65px;
     border-radius: 50px;
     border: 2px solid #fff;
     cursor: pointer;
-}
-.hero-resume a{
     text-decoration: none;
     color: #fff;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './Navbar.css'
 import logo from '../../assets/logo.svg'
@@ -17,6 +17,28 @@ const Navbar = () => {
     const closeMenu = () => {
         menuRef.current.style.right = "-100%";
     }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['home', 'about', 'services', 'work', 'contact'];
+            const scrollPosition = window.scrollY + 100;
+
+            for (let section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const offsetTop = element.offsetTop;
+                    const offsetHeight = element.offsetHeight;
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        setMenu(section);
+                        break;
+                    }
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     return (
         <div className='navbar'>
             <img src={logo} alt="" />
@@ -29,7 +51,7 @@ const Navbar = () => {
                 <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={() => { setMenu("work"); closeMenu(); }}>Portfolio</p></AnchorLink>{menu === "work" ? <img src={underline} alt='' /> : <></>}</li>
                 <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={() => { setMenu("contact"); closeMenu(); }}>Contact</p></AnchorLink>{menu === "contact" ? <img src={underline} alt='' /> : <></>}</li>
             </ul>
-            <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
+            <AnchorLink className='anchor-link nav-connect' offset={50} href='#contact'>Connect With Me</AnchorLink>
         </div>
     )
 }

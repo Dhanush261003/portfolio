@@ -4,6 +4,14 @@ import footer_logo from '../../assets/logo.svg'
 import user_icon from '../../assets/user_icon.svg'
 
 const Footer = () => {
+    const handleConnectClick = (e) => {
+        e.preventDefault();
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="footer">
             <div className="footer-top">
@@ -26,9 +34,9 @@ const Footer = () => {
             <div className="footer-bottom">
                 <p className="footer-bottom-left">© 2025 Dhanush. All rights reserved.</p>
                 <div className="footer-bottom-right">
-                    <p>Term of Services</p>
-                    <p>Privacy Policy</p>
-                    <p>Connect with me</p>
+                    <a href=""><p>Term of Services</p></a>
+                    <a href=""><p>Privacy Policy</p></a>
+                    <a onClick={handleConnectClick} href="#contact"><p>Connect with me</p></a>
                 </div>
             </div>
         </div>
