@@ -19,7 +19,7 @@ const mywork_data = [
         w_no: 3,
         w_name: "Web Design",
         w_img: project3_img,
-        w_link: "https://dhanushs.vercel.app"
+        w_link: "https://thumb-ai-studio.vercel.app"
     },
 ]
 
