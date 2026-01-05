@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="footer-bottom">
-                <p className="footer-bottom-left">© 2025 Dhanush. All rights reserved.</p>
+                <p className="footer-bottom-left">© 2026 Dhanush. All rights reserved.</p>
                 <div className="footer-bottom-right">
                     <a href=""><p>Term of Services</p></a>
                     <a href=""><p>Privacy Policy</p></a>
